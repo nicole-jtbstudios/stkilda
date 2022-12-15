@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        position: relative;
+        width: 800px;
+      }
+
+      img {
+        width: 100vw;
+      }
+      .video {
+        width: 800vw;
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://res.cloudinary.com/dm5to5eiz/image/upload/v1671058203/Landing_o1mio3.png"
+      />
+      <div class="video">
+        <video autoplay loop muted playsinline>
+          <source
+            src="https://res.cloudinary.com/dm5to5eiz/video/upload/v1671058074/fa-hevc-safari_1_wcsgms.mp4"
+            type='video/mp4; codecs="hvc1"'
+          />
+
+          <source
+            src="https://res.cloudinary.com/dm5to5eiz/video/upload/v1671057811/FA-vp9-chrome_sgrbhn.webm"
+            type="video/webm"
+          />
+        </video>
+      </div>
+    </div>
+  </body>
+</html>
